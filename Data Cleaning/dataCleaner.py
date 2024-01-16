@@ -27,7 +27,7 @@ print('\nPandas version:\n', df.nunique())
 
 # Show how many columns there are before deletion
 print('\nShape of original dataset: ', df.shape)
-# Get number of unique values for eacch column
+# Get number of unique values for each column
 counts = df.nunique()
 # Record which columns should be deleted
 to_del = [i for i, v in enumerate(counts) if v == 1]
@@ -84,6 +84,6 @@ print('\nList of duplicate rows:\n', iris_df[dups])
 
 # Output shape of original dataset before row deletion
 print('\nShape of original Iris dataset: ', iris_df.shape)
-# Delete dupliccate rows
+# Delete duplicate rows
 iris_df.drop_duplicates(inplace=True)
 print('\nNew shape of Iris dataset: ', iris_df.shape)
